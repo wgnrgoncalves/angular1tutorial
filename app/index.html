@@ -8,33 +8,11 @@
     <link rel="stylesheet" href="app.css" />
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
+    <script src="phone-list.component.js"></script>
 </head>
 
-<body ng-controller="PhoneListController">
-    <ul>
-        <li ng-repeat="phone in phones">
-            <span>{{phone.name}}</span>
-            <p>{{phone.snippet}}</p>
-        </li>
-    </ul>
-    <p>Total de telefones: {{phones.length}}</p>
-    <p>Hello, {{name}}!</p>
-    <table>
-        <tr>
-            <th>Row Number</th>
-        </tr>
-        <tr ng-repeat="i in [0,1,2,3,4,5,6,7]">
-            <td>{{i}}</td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <th>Row Number</th>
-        </tr>
-        <tr ng-repeat="i in [0,1,2,3,4,5,6,7]">
-            <td>{{i + 1}}</td>
-        </tr>
-    </table>
+<body>
+    <phone-list></phone-list>
 </body>
 
 </html>
