@@ -9,16 +9,29 @@
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
 </head>
-<body ng-controller="PhoneListController">
-    <ul>
-        <li ng-repeat="phone in phones">
-            <span>{{phone.name}}</span>
-            <p>{{phone.snippet}}</p>
-        </li>
-    </ul>
-    <p>Total de telefones: {{phones.length}}</p>
-    <p>Hello, {{name}}!</p>
 
-    
+<body>
+    <div ng-controller="PhoneListController">
+        <ul>
+            <li ng-repeat="phone in phones">
+                <span>{{phone.name}}</span>
+                <p>{{phone.snippet}}</p>
+            </li>
+        </ul>
+        <p>Total de telefones: {{phones.length}}</p>
+        <p>Hello, {{name}}!</p>
+    </div>
+    <hr />
+    <div ng-controller='OutraLista'>
+        <ul>
+            <li ng-repeat='carro in carros'>
+                <span>{{carro.nome}}</span>
+                <p>{{carro.marca}}</p>
+            </li>
+        </ul>
+    </div>
+
+
 </body>
+
 </html>
