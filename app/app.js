@@ -1,20 +1,19 @@
-var phonecatApp = angular.module('phonecatApp', []);
-phonecatApp.controller('PhoneListController',
-    function PhoneListController($scope) {
-        $scope.phones = [
-            {
-                name: "Nexus S",
-                snippet: 'Fast  just got faster with Nexsus S.'
-            },
-            {
-                name: 'Motorola XOOM™ with Wi-Fi',
-                snippet: 'The Next, Next Generation tablet.'
-            }, {
-                name: 'MOTOROLA XOOM™',
-                snippet: 'The Next, Next Generation tablet.'
-            }
-        ];
-        $scope.name = 'world';
+'use strict';
+angular.module('myApp', []);
 
-    }
-);
+angular.
+    module('myApp').
+    component('greetUser', {
+        template : 'Hello, {{$ctrl.user}}!',
+        controller: function GreetUserController(){
+            this.user = 'world';
+        }
+    }).
+    component('explicaBruxaria', {
+        template : 
+            '<h1>Esse é exemplo de componente.</h1>' +
+            '<p>Conclusão de como funciona</p>' +
+            '<p>o nome do componente é composto por exemplo: "explicaBruxaria". na pagina html fica com o componente &lt;eplica-bruxaria&gt;'
+            
+
+    });
