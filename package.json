@@ -1,0 +1,30 @@
+{
+  "name": "angular1tutorial",
+  "version": "1.0.0",
+  "description": "Projeto de tutorial do angular 1",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist}/**/*\" app/lib -C",
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wgnrgoncalves/angular1tutorial.git"
+  },
+  "author": "wgnrgoncalves@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wgnrgoncalves/angular1tutorial/issues"
+  },
+  "homepage": "https://github.com/wgnrgoncalves/angular1tutorial#readme",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "http-server": "^0.11.1"
+  }
+}

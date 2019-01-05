@@ -1,0 +1,9 @@
+0001 - Criei um novo projeto no github
+0002 - Fiz clone do projeto.     git clone git@github.com:wgnrgoncalves/angular1tutorial.git
+0003 - Iniciei o projeto node.      npm init --save
+0004 - Instalei o modulo 'Dev' http-server.        npm install http-server -D 
+0005 - Instalei o modulo 'Dev' cpx.       npm install cpx -D
+0006 - Instalei o modulo angular.       npm install angular@1.7.x --save
+0007 - Instalei o modulo bootstrap.       npm install bootstrap@3.3.x --save
+0008 - Instalei o modulo jquery.        npm install jquery --save
+0009 - Criei a primeira pagina. O angualr precisa ter o marcador ng-app
