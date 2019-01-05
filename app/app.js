@@ -19,23 +19,23 @@ phonecatApp
 
         }
     ).controller('OutraLista',
-    function OutraLista($scope){
-        $scope.carros = [
-            {
-                nome : 'Celta',
-                marca : 'GM'
-            },
-            {
-                nome : 'Fusca',
-                marca : 'VW'
-            },
-            {
-                nome : 'Civic',
-                marca : 'Honda'
-            },
-            {
-                nome : 'Uno',
-                marca : 'Fiat'
-            }
-        ]
-    });
+        function OutraLista($scope) {
+            $scope.carros = [
+                {
+                    nome: 'Celta',
+                    marca: 'GM'
+                },
+                {
+                    nome: 'Fusca',
+                    marca: 'VW'
+                },
+                {
+                    nome: 'Civic',
+                    marca: 'Honda'
+                },
+                {
+                    nome: 'Uno',
+                    marca: 'Fiat'
+                }
+            ]
+        });
