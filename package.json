@@ -7,7 +7,7 @@
     "postinstall": "npm run copy-libs",
     "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist}/**/*\" app/lib -C",
     "prestart": "npm install",
-    "start": "http-server ./app -a localhost -p 8000 -c-1"
+    "start": "http-server ./app -a localhost -p 8001 -c-1"
   },
   "repository": {
     "type": "git",
