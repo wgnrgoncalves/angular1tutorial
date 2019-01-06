@@ -21,6 +21,7 @@
   "homepage": "https://github.com/wgnrgoncalves/angular1tutorial#readme",
   "dependencies": {
     "angular": "^1.7.5",
+    "angular-resource": "^1.7.5",
     "angular-route": "^1.7.5",
     "bootstrap": "^3.3.7"
   },
