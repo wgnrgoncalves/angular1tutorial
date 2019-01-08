@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist}/**/*\" app/lib -C",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist/}/**/*\" app/lib -C",
     "prestart": "npm install",
     "start": "http-server ./app -a localhost -p 8001 -c-1"
   },
@@ -21,9 +21,11 @@
   "homepage": "https://github.com/wgnrgoncalves/angular1tutorial#readme",
   "dependencies": {
     "angular": "^1.7.5",
+    "angular-animate": "^1.7.5",
     "angular-resource": "^1.7.5",
     "angular-route": "^1.7.5",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
